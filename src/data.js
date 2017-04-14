@@ -1,9 +1,7 @@
-const codes = new Map();
-/*
-codes.set('0fx4', '75461674');
-*/
-
 const users = new Map();
-const subscribe = (userId, res) => users.set(userId, res);
 
-export { codes, users, subscribe };
+export const subscribe = (userId, res) => users.set(userId, res);
+
+export const getSubscribedUser = userId => users.get(userId);
+
+export const unsubscribe = userId => users.delete(userId);

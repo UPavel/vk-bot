@@ -1,6 +1,6 @@
 import Server from './server';
 import vk from './initialVK-IO';
-import { codes, subscribe } from './data';
+import { subscribe } from './data';
 import redis from './redis/redis';
 
 const server = new Server();
